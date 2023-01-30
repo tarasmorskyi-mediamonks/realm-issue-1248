@@ -13,7 +13,7 @@ class Greeting {
 
     val realmConfiguration = RealmConfiguration.Builder(
         setOf(
-            TestRealmClass::class
+            TestRealmClass::class, TestSecondRealmClass::class, TestThirdRealmClass::class
         )
     )
         .name("test.realm")
