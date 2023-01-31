@@ -20,7 +20,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api("io.realm.kotlin:library-base:1.6.0")
+                api("io.realm.kotlin:library-base:1.5.2")
                 api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
             }
         }

@@ -1,14 +1,21 @@
-plugins {
-    //trick: for the same plugin versions in all sub-modules
-    id("com.android.application").version("7.4.0").apply(false)
-    id("com.android.library").version("7.4.0").apply(false)
-    kotlin("android").version("1.7.20").apply(false)
-    kotlin("multiplatform").version("1.7.20").apply(false)
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath("io.realm.kotlin:gradle-plugin:1.5.2")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.21")
+        classpath("com.android.tools.build:gradle:7.2.1")
+    }
 }
 
-buildscript {
-    dependencies {
-        classpath("io.realm.kotlin:gradle-plugin:1.6.0")
+allprojects {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
     }
 }
 
